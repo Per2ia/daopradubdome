@@ -166,25 +166,23 @@
     }
 
     .Ham-menu {
-        display: block;
-        position: absolute;
-        width: 100%;
+        display: inline-block;
         height: 80px;
+        width: 100%;
         background: transparent;
         border-bottom: .1px solid rgb(255, 255, 255);
     }
 
-    .Ham-menu .inham ul {
-        position: relative;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        flex-direction: row;
-        gap: 30px 30px;
-        padding-top: .7em;
-        padding-right: 1em;
-        font-family: "BoldThaiFont";
-        font-size: 2em;
+    .Ham-menu ul {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .Ham-menu ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        font-size: 1.8em;
     }
 
 
@@ -347,6 +345,13 @@
         max-width: 30px;
         max-height: 30px;
     }    
+}
+
+@media screen and (max-width: 396px) {
+    h2 {
+        font-size: .5em;
+        margin-top: -150px;
+    }
 }
 
 @media (max-width: 768px) {
